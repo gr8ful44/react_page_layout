@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 
 const PrivateLayout = () => {
   return (
@@ -7,9 +7,9 @@ const PrivateLayout = () => {
         <nav className="flex justify-between mx-5">
           <p className="text-xl">Logo</p>
           <div className="flex gap-6">
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
+            <Link to="/dashboard">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/contact">Contact</Link>
           </div>
         </nav>
       </header>
@@ -18,18 +18,18 @@ const PrivateLayout = () => {
           <aside>
             <ul className="text-center">
               <li className="py-3 border bg-white">
-                <a href="/">Menu 1</a>
+                <Link to="/dashboard">Menu 1</Link>
               </li>
               <li className="py-3 border bg-white">
-                <a href="/about">Menu 2</a>
+                <Link to="/about">Menu 2</Link>
               </li>
               <li className="py-3 border bg-white">
-                <a href="/contact">Menu 3</a>
+                <Link to="/contact">Menu 3</Link>
               </li>
             </ul>
           </aside>
         </div>
-        <main className="flex-1 flex flex-col gap-4 p-4 pt-0">
+        <main className="flex-1 flex flex-col gap-4 pt-0">
           {/* ส่วนนี้จะเป็น content ของแต่ละหน้า */}
           <Outlet />
         </main>
