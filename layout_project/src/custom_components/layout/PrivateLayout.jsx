@@ -26,9 +26,6 @@ const PrivateLayout = () => {
               <li className="py-3 border bg-white">
                 <Link to="/contact">Menu 3</Link>
               </li>
-              <li className="py-3 border bg-white">
-                <Link to="/teams">Menu 4</Link>
-              </li>
             </ul>
           </aside>
         </div>

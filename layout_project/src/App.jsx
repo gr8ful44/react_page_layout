@@ -7,8 +7,6 @@ import Login from "./pages/Login";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import PageNotFound from "./pages/PageNotFound";
-import Teams from "./pages/Teams";
-import UserInfo from "./pages/UserInfo";
 
 function App() {
   return (
@@ -19,8 +17,6 @@ function App() {
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="teams" element={<Teams />} />
-          <Route path="teams/:id" element={<UserInfo />} />
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>
